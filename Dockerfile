@@ -33,7 +33,7 @@ WORKDIR /home/tutorial
 
 RUN git clone https://github.com/pnnl/gmt.git
 RUN cmake -S gmt -B gmt-build && cmake --build gmt-build && cmake --install gmt-build
-RUN git clone -b ics_2021_tutorial https://github.com/pnnl/SHAD.git
+RUN git clone -b hpdc21_tutorial https://github.com/pnnl/SHAD.git
 RUN cmake -S SHAD -B SHAD-build -DCMAKE_BUILD_TYPE=Release -DSHAD_RUNTIME_SYSTEM=GMT && \
     cmake --build SHAD-build && \
     cmake --install SHAD-build
